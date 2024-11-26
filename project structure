@@ -1,0 +1,12 @@
+ChessProject/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   ├── com.chess/
+│   │   │   │   ├── model/        # Entity classes for Chess and Player
+│   │   │   │   ├── dao/          # DAO classes for database operations
+│   │   │   │   ├── service/      # Logic for chess game rules
+│   │   │   │   ├── util/         # JDBC utilities
+│   │   │   │   ├── Main.java     # Entry point
+│   │   ├── resources/            # Configuration files
+├── pom.xml                        # Maven dependencies and build configuration

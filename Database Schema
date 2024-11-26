@@ -1,0 +1,29 @@
+CREATE DATABASE ChessDB;
+
+USE ChessDB;
+
+CREATE TABLE Players (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    rating INT DEFAULT 1000
+);
+
+CREATE TABLE Games (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    player1_id INT NOT NULL,
+    player2_id INT NOT NULL,
+    winner_id INT,
+    start_time DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (player1_id) REFERENCES Players(id),
+    FOREIGN KEY (player2_id) REFERENCES Players(id),
+    FOREIGN KEY (winner_id) REFERENCES Players(id)
+);
+
+CREATE TABLE Moves (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    game_id INT NOT NULL,
+    move_number INT NOT NULL,
+    move_text VARCHAR(20) NOT NULL,
+    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (game_id) REFERENCES Games(id)
+);
