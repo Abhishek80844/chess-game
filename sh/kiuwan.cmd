@@ -1,0 +1,1 @@
+agent.cmd -s . -n Chess -l "from Jenkins pipeline"

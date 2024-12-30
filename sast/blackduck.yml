@@ -1,0 +1,6 @@
+blackduck:
+  url: 'https://poc78.blackduck.synopsys.com'
+  api.token: 'NjFlZTYwZGMtY2YzNS00N2ZkLTgxYjQtZDY0MDAzZjcxNTg3OmRkZjQyN2JlLTBhODgtNDFjYS05YzM4LTE4Y2YyYWVlODBmNg=='
+detect:
+  project.name: Chess
+  project.version.name: 1.2

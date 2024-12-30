@@ -1,0 +1,25 @@
+-------------------------------
+document path traversal
+add directory matches
+read from matches/../etc/passwd
+-------------------------------
+save player1 and player2 as cookies
+save timer in the session
+paint timer in the match
+paint the players in the match
+document http response splitting
+-------------------------------
+document sql injection
+-------------------------------
+implement xss
+document xss 
+-------------------------------
+implement xxe 
+(update xml with color settings?)
+show the message to the user
+-------------------------------
+
+
+review dhcp server when launching docker terminal
+
+

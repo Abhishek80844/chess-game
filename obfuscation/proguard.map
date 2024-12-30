@@ -1,0 +1,224 @@
+com.sebas.core.Bishop -> com.sebas.core.Bishop:
+    void <init>() -> <init>
+    java.util.List move(java.lang.String,java.lang.String,java.lang.String) -> move
+    boolean isRealMove(com.sebas.core.Movement,com.sebas.core.Board,java.lang.String) -> isRealMove
+    java.util.List getSquares(com.sebas.core.Board,com.sebas.core.Movement) -> getSquares
+com.sebas.core.Board -> com.sebas.core.Board:
+    org.apache.log4j.Logger log -> log
+    com.sebas.core.Square[][] squares -> ksdlsadsasddasds
+    com.sebas.core.Square[][] getSquares() -> getSquares
+    void setSquares(com.sebas.core.Square[][]) -> setSquares
+    void <init>() -> <init>
+    com.sebas.core.Square[][] buildInitialPosition() -> ksdlsadsasddasds
+    com.sebas.core.Square createSquare(java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> createSquare
+    java.lang.String calculateVertical(int) -> calculateVertical
+    java.lang.String calculateHorizontal(int) -> calculateHorizontal
+    void update(com.sebas.core.Movement,java.lang.String) -> update
+    void printLine(java.lang.String,java.lang.String) -> printLine
+    void print() -> print
+    boolean checkMate(com.sebas.core.Movement) -> checkMate
+    com.sebas.core.Square getSquare(java.lang.String) -> getSquare
+    void <clinit>() -> <clinit>
+com.sebas.core.King -> com.sebas.core.King:
+    void <init>() -> <init>
+    boolean isRealMove(com.sebas.core.Movement,com.sebas.core.Board,java.lang.String) -> isRealMove
+    java.util.List move(java.lang.String,java.lang.String,java.lang.String) -> move
+com.sebas.core.Knight -> com.sebas.core.Knight:
+    void <init>() -> <init>
+    java.util.List move(java.lang.String,java.lang.String,java.lang.String) -> move
+    boolean isRealMove(com.sebas.core.Movement,com.sebas.core.Board,java.lang.String) -> isRealMove
+com.sebas.core.Match -> com.sebas.core.Match:
+    org.apache.log4j.Logger log -> log
+    com.sebas.core.Board board -> ksdlsadsasddasds
+    java.lang.String turn -> ksdlsadsasddasds
+    boolean checkmate -> ksdlsadsasddasds
+    int movement -> ksdlsadsasddasds
+    java.lang.String historyMatch -> khkjsdhkashdkjas
+    java.lang.String logger -> jdlksajdlsajdlas
+    java.lang.String player1 -> snajdnlskajdlksa
+    java.lang.String player2 -> dhkajshdkasdhjas
+    java.lang.String timer -> sdasjkkhdksahdka
+    java.lang.String getPlayer1() -> getPlayer1
+    void setPlayer1(java.lang.String) -> setPlayer1
+    java.lang.String getPlayer2() -> getPlayer2
+    void setPlayer2(java.lang.String) -> setPlayer2
+    java.lang.String getTimer() -> getTimer
+    void setTimer(java.lang.String) -> setTimer
+    java.lang.String getLog() -> getLog
+    void setLog(java.lang.String) -> setLog
+    com.sebas.core.Board getBoard() -> getBoard
+    void setBoard(com.sebas.core.Board) -> setBoard
+    java.lang.String getTurno() -> getTurno
+    void setTurno(java.lang.String) -> setTurno
+    java.lang.String getHistoryMatch() -> getHistoryMatch
+    void setHistoryMatch(java.lang.String) -> setHistoryMatch
+    void <init>(java.lang.String) -> <init>
+    void main(java.lang.String[]) -> main
+    void startGame() -> startGame
+    java.lang.String justMove(com.sebas.core.Movement) -> justMove
+    void <clinit>() -> <clinit>
+com.sebas.core.Movement -> com.sebas.core.Movement:
+    com.sebas.core.Piece piece -> ksdlsadsasddasds
+    java.lang.String origin -> dlsdjsaljdlasdal
+    java.lang.String destiny -> dsljsljdlsjdlsjd
+    int materialValue -> khkjsdhkashdkjas
+    int squaresControlled -> jdlksajdlsajdlas
+    double heuristicValue -> ksdlsadsasddasds
+    com.sebas.core.Piece getPiece() -> getPiece
+    void setPiece(com.sebas.core.Piece) -> setPiece
+    java.lang.String getOrigin() -> getOrigin
+    void setOrigin(java.lang.String) -> setOrigin
+    java.lang.String getDestiny() -> getDestiny
+    void setDestiny(java.lang.String) -> setDestiny
+    int getValue() -> getValue
+    void setValue(int) -> setValue
+    int getSquaresControlled() -> getSquaresControlled
+    void setSquaresControlled(int) -> setSquaresControlled
+    double getHeuristicValue() -> getHeuristicValue
+    void setHeuristicValue(double) -> setHeuristicValue
+    void <init>() -> <init>
+    void <init>(com.sebas.core.Piece,java.lang.String,java.lang.String) -> <init>
+    void <init>(com.sebas.core.Board,java.lang.String) -> <init>
+    com.sebas.core.Movement makeMovement(com.sebas.core.Board,java.lang.String,int) -> makeMovement
+    com.sebas.core.Movement evaluateNumberSquares(com.sebas.core.Board,java.lang.String) -> ksdlsadsasddasds
+    java.util.List getPossiblesMoves(com.sebas.core.Board,java.lang.String) -> ksdlsadsasddasds
+    java.util.List filterMoves(com.sebas.core.Board,java.util.List,java.lang.String) -> ksdlsadsasddasds
+    java.util.List evaluatedMoves(com.sebas.core.Board,java.util.List,java.lang.String) -> khkjsdhkashdkjas
+    com.sebas.core.Board copy(com.sebas.core.Board) -> ksdlsadsasddasds
+    com.sebas.core.Movement chooseBestMove(java.util.List) -> ksdlsadsasddasds
+com.sebas.core.Movement$1 -> com.sebas.core.a:
+    void <init>(com.sebas.core.Movement) -> <init>
+    int compare(java.lang.Object,java.lang.Object) -> compare
+com.sebas.core.Pawn -> com.sebas.core.Pawn:
+    void <init>() -> <init>
+    java.util.List move(java.lang.String,java.lang.String,java.lang.String) -> move
+    boolean isRealMove(com.sebas.core.Movement,com.sebas.core.Board,java.lang.String) -> isRealMove
+com.sebas.core.Piece -> com.sebas.core.Piece:
+    java.lang.String color -> sdskjdksalccmkdl
+    java.lang.String horizontal -> dslkdkoewoiddkpk
+    java.lang.String vertical -> a
+    java.lang.String type -> b
+    int value -> snajdnlskajdlksa
+    org.apache.log4j.Logger log -> log
+    void <init>() -> <init>
+    int getValue() -> getValue
+    void setValue(int) -> setValue
+    java.lang.String getType() -> getType
+    void setType(java.lang.String) -> setType
+    java.lang.String getColor() -> getColor
+    void setColor(java.lang.String) -> setColor
+    java.lang.String getHorizontal() -> getHorizontal
+    void setHorizontal(java.lang.String) -> setHorizontal
+    java.lang.String getVertical() -> getVertical
+    void setVertical(java.lang.String) -> setVertical
+    java.util.List move(java.lang.String,java.lang.String,java.lang.String) -> move
+    boolean isRealMove(com.sebas.core.Movement,com.sebas.core.Board,java.lang.String) -> isRealMove
+    void <clinit>() -> <clinit>
+com.sebas.core.Queen -> com.sebas.core.Queen:
+    void <init>() -> <init>
+    java.util.List move(java.lang.String,java.lang.String,java.lang.String) -> move
+    boolean isRealMove(com.sebas.core.Movement,com.sebas.core.Board,java.lang.String) -> isRealMove
+com.sebas.core.Square -> com.sebas.core.Square:
+    boolean isEmpty -> khkjsdhkashdkjas
+    com.sebas.core.Piece pieza -> khkjsdhkashdkjas
+    java.lang.String horizontal -> dslkdkoewoiddkpk
+    java.lang.String vertical -> a
+    void <init>() -> <init>
+    boolean isEmpty() -> isEmpty
+    void setEmpty(boolean) -> setEmpty
+    com.sebas.core.Piece getPieza() -> getPieza
+    void setPieza(com.sebas.core.Piece) -> setPieza
+    java.lang.String getHorizontal() -> getHorizontal
+    void setHorizontal(java.lang.String) -> setHorizontal
+    java.lang.String getVertical() -> getVertical
+    void setVertical(java.lang.String) -> setVertical
+com.sebas.core.StartGame -> com.sebas.core.StartGame:
+    void <init>() -> <init>
+    void main(java.lang.String[]) -> main
+com.sebas.core.Tower -> com.sebas.core.Tower:
+    void <init>() -> <init>
+    java.util.List move(java.lang.String,java.lang.String,java.lang.String) -> move
+    boolean isRealMove(com.sebas.core.Movement,com.sebas.core.Board,java.lang.String) -> isRealMove
+    java.util.List getSquares(com.sebas.core.Board,com.sebas.core.Movement) -> getSquares
+com.sebas.core.UtilChess -> com.sebas.core.UtilChess:
+    void <init>() -> <init>
+    int calculateHorizontal(java.lang.String) -> calculateHorizontal
+    java.lang.String calculateHorizontal(int) -> calculateHorizontal
+    int calculateVertical(java.lang.String) -> calculateVertical
+    java.lang.String calculateVertical(int) -> calculateVertical
+    java.lang.String randomPiece(int) -> randomPiece
+    double round(double,int) -> round
+core.sebas.App -> core.sebas.App:
+    void <init>() -> <init>
+    void main(java.lang.String[]) -> main
+core.sebas.Serial -> core.sebas.Serial:
+    void <init>() -> <init>
+    java.lang.Object fromBase64(java.lang.String) -> fromBase64
+    java.lang.String toBase64(java.io.Serializable) -> toBase64
+core.sebas.servlets.Authentication -> core.sebas.servlets.Authentication:
+    org.apache.log4j.Logger log -> log
+    long serialVersionUID -> serialVersionUID
+    void <init>() -> <init>
+    void doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) -> doPost
+    void <clinit>() -> <clinit>
+core.sebas.servlets.FirstAuthentication -> core.sebas.servlets.FirstAuthentication:
+    long serialVersionUID -> serialVersionUID
+    void <init>() -> <init>
+    void doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) -> doPost
+    void <clinit>() -> <clinit>
+core.sebas.servlets.Game -> core.sebas.servlets.Game:
+    long serialVersionUID -> serialVersionUID
+    void <init>() -> <init>
+    void doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) -> doGet
+core.sebas.servlets.HolaMundo -> core.sebas.servlets.HolaMundo:
+    long serialVersionUID -> serialVersionUID
+    org.apache.log4j.Logger log -> log
+    void <init>() -> <init>
+    void doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) -> doGet
+    void <clinit>() -> <clinit>
+core.sebas.servlets.Load -> core.sebas.servlets.Load:
+    long serialVersionUID -> serialVersionUID
+    void <init>() -> <init>
+    void doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) -> doGet
+core.sebas.servlets.LoadGame -> core.sebas.servlets.LoadGame:
+    long serialVersionUID -> serialVersionUID
+    org.apache.log4j.Logger log -> log
+    void <init>() -> <init>
+    void doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) -> doPost
+    void <clinit>() -> <clinit>
+core.sebas.servlets.MatchServlet -> core.sebas.servlets.MatchServlet:
+    long serialVersionUID -> serialVersionUID
+    org.apache.log4j.Logger log -> log
+    void <init>() -> <init>
+    void doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) -> doGet
+    void doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) -> doPost
+    com.sebas.core.Match updateMatch(javax.servlet.http.HttpSession) -> ksdlsadsasddasds
+    java.lang.StringBuffer paintMatch(com.sebas.core.Match,java.lang.String,boolean,java.lang.String) -> ksdlsadsasddasds
+    void <clinit>() -> <clinit>
+core.sebas.servlets.NewGame -> core.sebas.servlets.NewGame:
+    long serialVersionUID -> serialVersionUID
+    org.apache.log4j.Logger log -> log
+    com.sebas.core.Match match -> ksdlsadsasddasds
+    void <init>() -> <init>
+    com.sebas.core.Match getMatch() -> getMatch
+    void setMatch(com.sebas.core.Match) -> setMatch
+    void doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) -> doGet
+    void <clinit>() -> <clinit>
+core.sebas.servlets.Save -> core.sebas.servlets.Save:
+    long serialVersionUID -> serialVersionUID
+    void <init>() -> <init>
+    void doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) -> doGet
+core.sebas.servlets.SaveGame -> core.sebas.servlets.SaveGame:
+    long serialVersionUID -> serialVersionUID
+    void <init>() -> <init>
+    void doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) -> doPost
+    void <clinit>() -> <clinit>
+core.sebas.servlets.Serialization -> core.sebas.servlets.Serialization:
+    long serialVersionUID -> serialVersionUID
+    void <init>() -> <init>
+    void doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) -> doGet
+    void doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) -> doPost
+core.sebas.servlets.Timer -> core.sebas.servlets.Timer:
+    long serialVersionUID -> serialVersionUID
+    void <init>() -> <init>
+    void doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) -> doGet
