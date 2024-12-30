@@ -1,9 +1,8 @@
-# Vulnerable chess game
-A simple vulnerable Chess Game developed in Java, using also javascript, jsp pages, css and traditional HttpRequest and HttpReponse.
+# chess game
+A simple Chess Game developed in Java, using also javascript, jsp pages, css and traditional HttpRequest and HttpReponse.
 It uses a mysql database with info of the users.
 
 You can find some SQL Injections, Cross Site Scripting, Path Traversal and so on.
-Some of the most important OWASP TOP 10 vulnerabilities.
 
 ## Steps to deploy the application locally
 
