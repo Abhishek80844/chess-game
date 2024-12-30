@@ -1,0 +1,20 @@
+db:
+  image: mysql
+  container_name: mysql_db
+  ports:
+    - 33060:3306
+  volumes:
+    - db_data:/var/lib/mysql
+  restart: always
+  environment:
+    MYSQL_ROOT_PASSWORD: toor
+    MYSQL_DATABASE: chess
+    MYSQL_USER: chess
+    MYSQL_PASSWORD: toor
+chess:
+  image: sebastianrevuelta/chess-game:2.4
+  container_name: chess
+  ports: 
+    - 8087:8080
+  links:
+    - db

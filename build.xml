@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="chess" default="war" basedir=".">
+  <description>
+    Buildfile for chess core library
+  </description>
+  
+	<property name="dirDevelop" value="."/>
+	<property name="mavenRepo" value="/home/sebas/.m2/repository"/>
+	<property name="dirDeploy" value="/home/sebas/tomcat/apache-tomcat-8.5.59/webapps"/> 
+
+	<property name="src.dir" value="./src/"/>
+	<property name="resources.dir" value="./src/main/resources/"/>
+	<property name="lib.dir" value="./lib"/>
+	<property name="build.path" value="./build/classes"/>
+	<property name="jarFile" value="chess.jar"/>
+        <property name="jarObsFile" value="chess_obs.jar"/>
+	
+
+	<path id="classpath.lib">
+  	  <fileset dir="${mavenRepo}/log4j/log4j/1.2.12/">
+	    <include name="*.jar"/>                          
+	  </fileset>
+	  <fileset dir="${mavenRepo}/javax/servlet/servlet-api/2.4/">
+	    <include name="*.jar"/>                          
+	  </fileset>
+	  <fileset dir="${mavenRepo}/junit/junit/3.8.1/">
+	    <include name="*.jar"/>                          
+	  </fileset>
+	  <fileset dir="${mavenRepo}/mysql/mysql-connector-java/8.0.19/">
+	    <include name="*.jar"/>                          
+	  </fileset>
+	  <fileset dir="${mavenRepo}/org/apache/commons/commons-collections4/4.0/">
+	    <include name="*.jar"/>                          
+	  </fileset>
+	</path>   
+	
+   <target name="clean" description="clean folders">
+     <delete dir="${build.path}"/>
+     <mkdir dir="${build.path}"/>  
+     <delete file="chess.war"/> 
+     <delete dir="${dirDevelop}/WebContent/WEB-INF/lib"/>
+     <mkdir dir="${dirDevelop}/WebContent/WEB-INF/lib"/>
+   </target>
+
+
+   <target name="compile" depends="clean" description="compile project source code">
+	<javac destdir="${build.path}" 
+		encoding="ISO-8859-1" 
+		source="1.8" 
+		target="1.8" 
+		debug="true" 
+		deprecation="false" 
+	 	optimize="false" 
+		failonerror="true">
+		<src path="${src.dir}"/>
+		<classpath refid="classpath.lib" />
+	</javac> 
+  </target> 	
+ 
+
+  <target name="jar" depends="compile">
+    <jar destfile="${build.path}/${jarFile}" basedir="${build.path}">
+      <fileset dir="${resources.dir}"/>
+    </jar>
+  </target>
+	
+  <target name="updateWebContent" depends="jar">
+  	<copy todir="${dirDevelop}/WebContent/WEB-INF/lib" overwrite="true">
+		<fileset file="${build.path}/${jarFile}"/>
+		<fileset dir="${mavenRepo}/log4j/log4j/1.2.12/" includes="*.jar"/>
+		<fileset dir="${mavenRepo}/javax/servlet/servlet-api/2.4/" includes="*.jar"/>
+		<fileset dir="${mavenRepo}/junit/junit/3.8.1/" includes="*.jar"/>
+		<fileset dir="${mavenRepo}/mysql/mysql-connector-java/8.0.19/" includes="*.jar"/>
+  		<fileset dir="${mavenRepo}/org/apache/commons/commons-collections4/4.0/" includes="*.jar"/>                          
+    </copy>
+  </target>
+  
+  <target name="war" depends="updateWebContent">
+   <war destfile="chess.war" webxml="WebContent/WEB-INF/web.xml">
+       <fileset dir="WebContent"/>
+    </war>
+  </target>
+
+   <target name="deploy" depends="war">
+      <copy todir="${dirDeploy}" overwrite="true">
+        <fileset file="chess.war"/>
+      </copy>
+    </target>
+</project>
+
